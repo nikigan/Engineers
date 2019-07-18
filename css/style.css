@@ -304,8 +304,19 @@ section {
 }
 
 .section-cases .carousel-cell {
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
   margin: 0 15px;
   padding: 64px 42px 64px 40px;
+}
+
+.section-cases .carousel-cell.is-selected {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
 }
 
 .section-cases .carousel-cell p {
