@@ -1,0 +1,697 @@
+@font-face 
+  font-family: 'Gosha Sans'
+  src: url("../fonts/GoshaSans-Regular.otf") format("opentype")
+  font-style: normal
+  font-weight: normal
+
+@font-face 
+  font-family: 'Gosha Sans'
+  src: url("../fonts/GoshaSans-Bold.otf") format("opentype")
+  font-style: normal
+  font-weight: bold
+
+body
+  background: #161616
+  font-family: 'Gosha Sans'
+  color: #ffffff
+  overflow-x: hidden
+  width: 100%
+img
+  width: 100%
+  height: auto
+h4
+  font-family: 'Montserrat'
+  font-size: 20px
+  font-weight: bold
+  line-height: 30px
+h3
+  font-size: 24px
+  line-height: 30px
+h2
+  font-size: 36px
+  line-height: 40px
+h1
+  font-size: 64px
+  line-height: 70px
+p
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 25px
+  color: #D1D1D1
+.btn-main
+  height: 80px
+  background: #2722F4
+  color: #ffffff
+  font-family: Montserrat
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 24px
+  border: 0
+  transition: background 0.3s
+  &:hover
+    background: #0000CC
+    box-shadow: 0px 5px 30px rgba(39, 34, 244, 0.3)
+section
+  margin: 10% 0
+
+.btn-main,.arrow
+  &:focus
+    outline: none
+  &:active
+    transition: transform .1s
+    transform: translateY(3px)
+
+  
+.navbar
+  margin-top: 2%
+  .navbar-brand
+    margin-left: 10px
+    line-height: 24px
+    font-size: 26px
+  .logo
+    margin-left: 10%
+    width: 36px
+    height: 36px
+  #my-nav
+    margin-right: 150px
+    a
+      color: #ffffff
+      font-size: 12px
+      letter-spacing: 1px
+      line-height: 32px
+      padding: 0
+      padding-bottom: 8px
+    .phone a
+      font-size: 16px
+    li
+      margin: 0 24px
+      &:nth-last-child(1)
+        margin-right: 0
+    .active
+      &::after
+        content: ''
+        width: 100%
+        display: block
+        background: #ffffff
+        height: 1px
+
+.arrow
+  background: #2722F4
+  transition: background 0.3s
+  &:hover
+    background: #0000CC
+    box-shadow: 0px 5px 30px rgba(39, 34, 244, 0.3)
+
+
+.section-plane
+  margin-top: 5%
+  position: relative
+  overflow: hidden
+  .row
+    margin: 32px 0
+  .plane
+    position: absolute
+    top: 15%
+    z-index: -1
+
+.section-work
+  position: relative
+  margin-top: 15%
+  .row
+    position: relative
+  h2
+    margin-bottom: 32px
+  .data
+    background: #0A0A0A
+    padding: 60px
+    padding-bottom: 100px
+    position: relative
+    .number
+      position: absolute
+      right: 0
+      bottom: 120%
+      margin-top: -60px
+      font-size: 30px
+      line-height: 40px
+      span
+        font-size: 60px
+  .arrows
+    position: absolute
+    right: 0
+    top: 120%
+    margin-right: -60px 
+  .arrow
+    display: inline-block
+    position: relative
+    margin: 0 3px
+    height: 78px
+    width: 78px
+    border: 0
+    span
+      position: absolute
+      top: 35%
+      left: 37%
+  .big-text
+    color: #353535
+    line-height: 128px
+    position: absolute
+    top: -40%
+    font-size: 144px
+  .bg-block
+    background: #121212
+    height: 300px
+    bottom: 50%
+    z-index: -1
+
+.section-scale
+  background: url('../img/backgroundcity.jpg') center no-repeat
+  background-size: cover
+  margin-bottom: 200px
+  h2
+    margin-bottom: 32px
+  .text-box
+    margin-top: 40%
+    margin-bottom: -10%
+    background: #0A0A0A
+    padding: 60px
+    padding-bottom: 60px
+
+.section-cases
+  .background
+    background: #121212
+    height: 130%
+    width: 65%
+    bottom: -20%
+    right: 0
+    z-index: -1
+  .arrows
+    position: absolute
+    z-index: 10
+    right: 10%
+    top: 105%
+  .arrow
+    display: inline-block
+    position: relative
+    margin: 0 3px
+    height: 78px
+    width: 78px
+    border: 0
+    span
+      position: absolute
+      top: 35%
+      left: 37%
+  span
+    display: inline-block
+    .rub
+      font-size: 24px
+      line-height: 24px
+  .carousel-cell
+    margin: 0 15px
+    padding: 64px 42px 64px 40px
+    p
+      font-size: 16px
+      margin-top: 32px
+      margin-bottom: 16px
+      height: 110px
+    .num
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 50px
+      margin-bottom: 8px
+    .desc
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
+      color: #D1D1D1
+    .w-100
+      margin-bottom: 32px
+    .row
+      margin-bottom: 48px
+    .a-btn
+      font-weight: bold
+      &::after
+        content: '———'
+    h2
+      font-weight: bold
+  a
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 24px
+    color: #ffffff
+    text-decoration: none
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &:hover
+      color: #7C7C7C
+    &::after
+      content: '→'
+      margin-left: 10px
+  margin-top: 128px
+  h1
+    margin-bottom: 104px
+  #cpu
+    background: url('../img/cpu_card_bg.jpg') no-repeat
+    background-size: cover 
+    background-position: bottom
+  #megapolis
+    background: url('../img/megapolis_card_bg.jpg') no-repeat
+    background-size: cover 
+    background-position: bottom
+  #krasroad
+    background: url('../img/krasroad_card_bg.jpg') no-repeat
+    background-size: cover 
+    background-position: bottom
+
+.section-reviews
+  position: relative
+  .background
+    background: #121212
+    height: 70%
+    width: 90%
+    left: 50%
+    z-index: -1
+  h1
+    position: absolute
+    display: block
+    left: 15%
+    bottom: 93% 
+    z-index: 1
+  margin-top: 200px
+  .review
+    background: #0A0A0A
+    padding: 128px 270px 100px 100px
+    padding-bottom: 100px
+    p
+      font-size: 24px
+      line-height: 36px
+      font-weight: normal
+    .media
+      .media-body
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 500
+        color: #686868
+        h5
+          font-size: 16px
+          color: #ffffff
+      img
+        height: 60px
+        width: 60px
+  .number-reviews
+      position: absolute
+      right: 10%
+      bottom: 130%
+      margin-top: -60px
+      font-size: 30px
+      line-height: 40px
+      span
+        font-size: 60px
+  .arrows
+    position: absolute
+    right: 10%
+    top: 85%
+    margin-right: -60px 
+  .arrow
+    display: inline-block
+    position: relative
+    margin: 0 3px
+    height: 78px
+    width: 78px
+    border: 0
+    span
+      position: absolute
+      top: 35%
+      left: 37%
+  a
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 24px
+    color: #ffffff
+    text-decoration: none
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &:hover
+      color: #7C7C7C
+  .a-btn
+      font-weight: bold
+      display: block
+      margin-top: 48px
+      &::after
+        margin-left: 10px
+        content: ''
+        display: inline-block
+        height: 2px
+        background: #fff
+        width: 50px
+        vertical-align: middle
+      &:hover::after
+        background: #7C7C7C
+.section-articles
+  margin-top: 100px
+  .col-4,.col-10
+    margin: 32px 0 
+    div
+      transition: background 0.3s
+      padding: 40px
+      background: #0A0A0A
+      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25)
+      &:hover
+        background: #2722F4
+      span
+        font-size: 12px
+        line-height: 32px
+        text-transform: uppercase
+      h5
+        font-size: 20px
+        line-height: 32px
+      a
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 24px
+        color: #ffffff
+        text-decoration: none
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        &:hover
+          color: #7C7C7C
+      .a-btn
+        font-weight: bold
+        display: block
+        margin-top: 24px
+        &::after
+          margin-left: 10px
+          content: ''
+          display: inline-block
+          height: 2px
+          background: #fff
+          width: 50px
+          vertical-align: middle
+        &:hover::after
+          background: #7C7C7C
+  .top-line
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 32px
+    letter-spacing: 1px
+    color: #D8D8D8
+  .header
+    margin-bottom: 104px
+  .articles-carousel
+    .carousel-cell
+      transition: background 0.3s
+      &.is-selected
+        background: #2722F4
+      .top-line
+        font-size: 12px
+        line-height: 32px
+      h5
+        display: block
+        font-size: 18px
+        line-height: 26px
+        height: 78px
+      a.a-btn
+        font-size: 14px
+        line-height: 24px
+      a
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 24px
+        color: #ffffff
+        text-decoration: none
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        &:hover
+          color: #7C7C7C
+      .a-btn
+        font-weight: bold
+        display: block
+        margin-top: 24px
+        &::after
+          margin-left: 10px
+          content: ''
+          display: inline-block
+          height: 2px
+          background: #fff
+          width: 50px
+          vertical-align: middle
+        &:hover::after
+          background: #7C7C7C
+      margin: 0 15px
+      padding: 15px
+      padding-bottom: 30px
+      background: #0A0A0A
+      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25)
+
+.section-contact
+  .left
+    h1
+      margin-bottom: 32px
+    p
+      margin-bottom: 54px
+    span
+      display: block
+      font-family: Gosha Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 24px
+      color: #ffffff
+      margin: 8px
+      &:hover
+        color: #7C7C7C
+    a
+      text-decoration: none
+  .right
+    .form-group
+      margin-bottom: 46px
+    label
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 24px
+      color: #DADADA
+    input,textarea
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 25px
+      &::placeholder
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 25px
+        color: #666666
+    .form-control
+      transition: border-bottom-color 0.3s
+      border: 0
+      border-radius: 0
+      border-bottom: 1px #979797 solid
+      background: none
+      padding: 0
+      &:focus
+        color: #D1D1D1
+        box-shadow: none
+        border-bottom-color: #ffffff 
+
+.footer
+  .row
+    margin-bottom: 100px
+  padding: 88px 80px 10px 160px    
+  background: #0A0A0A
+  .container
+    padding: 0
+  .right
+    span
+      display: block
+      font-family: Montserrat
+      font-style: normal
+      color: #D1D1D1
+    .first-line
+      font-size: 12px
+      line-height: 18px 
+      letter-spacing: 1px
+      text-transform: uppercase
+      margin-bottom: 8px
+    .second-line
+      font-weight: 500
+      font-size: 16px
+      line-height: 25px
+      margin-bottom: 32px
+  .last-line
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 25px
+    text-align: center
+    color: #626262
+
+
+@media screen and (max-width: 992px)
+  .plane
+    opacity: 0.6
+  .section-work
+    h1
+      margin-bottom: 100px
+    .row
+      justify-content: center
+  .section-scale
+    .row
+      justify-content: center
+  .section-reviews
+    .review
+      padding-right: 50px
+  .section-articles
+    .header
+      text-align: center
+    .row
+      justify-content: center
+  .section-contact
+    text-align: center
+    .left
+      margin-bottom: 100px
+    .right
+      text-align: left
+      .btn-main
+        margin: auto
+    .row
+      justify-content: center
+  .footer
+    padding: 50px 50px 10px 100px
+
+@media screen and (max-width: 450px)
+  h1
+    font-size: 24px
+    line-height: 30px
+  h2
+    font-size: 20px
+    line-height: 26px
+  h3
+    font-size: 18px
+  p
+    font-size: 14px
+  .section-plane
+    .row
+      justify-content: center
+  .section-work
+    .data
+      padding-left: 20px
+      padding-right: 20px
+      .arrow
+        width: 57px
+        height: 57px
+      .arrows
+        margin-right: -20px
+      .number
+        bottom: 115%
+        span
+          font-size: 30px
+        font-size: 14px
+  .section-scale
+    transform: scaleX(-1)
+    background-position: center
+    margin-bottom: 300px
+    > *
+      transform: scaleX(-1)
+    .text-box
+      margin-top: 200px
+      margin-bottom: -250px
+      padding-left: 20px
+      padding-right: 20px
+  .section-cases
+    h1
+      text-align: center
+      margin-bottom: 64px
+    .carousel-cell
+      .row
+        margin-bottom: 24px
+      a
+        font-size: 14px
+      .top-link
+        display: none
+      padding: 40px 20px 60px 25px
+      p
+        color: #ffffff
+        margin-top: 24px
+        font-size: 14px
+        line-height: 22px
+      .w-100
+        margin-bottom: 16px
+      .num
+        margin-bottom: 0
+        font-size: 36px
+        line-height: 24px
+      .rub
+        font-size: 18px
+      .desc
+        font-size: 12px
+        line-height: 16px
+    .arrow
+      width: 57px
+      height: 57px
+    .arrows
+      top: 92%
+      right: 7.5%
+  .section-reviews
+    margin-top: 104px
+    h1
+      position: static
+      text-align: center
+      margin-bottom: 64px
+    .review
+      padding: 50px 30px
+      p
+        font-size: 14px
+        line-height: 22px
+        color: #ffffff
+      .media
+        .media-body
+          font-size: 12px
+          h5
+            font-size: 14px
+      .arrows
+        top: 105%
+        right: 4%
+      .arrow
+        width: 57px
+        height: 57px
+      .number-reviews
+        bottom: 107%
+        span
+          font-size: 30px
+        font-size: 14px
+  .section-articles
+    .header
+      margin-bottom: 50px
+  .section-contact
+    .left
+      margin-top: 50px
+      margin-bottom: 50px
+      p
+        line-height: 22px
+      span
+        font-size: 18px
+        line-height: 24px
+  header
+    .navbar
+      #my-nav
+        margin: auto
+        .nav-item.phone
+          a
+            font-size: 12px
